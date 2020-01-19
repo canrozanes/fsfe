@@ -6,7 +6,7 @@ app.get('/', (req, res) => res.send('Hello World!'));
 
 app.get('/teapot', (req,res)=>{
   res.status(418)
-  res.set('teapots-are-great-header')
+  res.set('X-viet`, teapots-are-great-header')
   res.send("I'm a teapot!")
 })
 
