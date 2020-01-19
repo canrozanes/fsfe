@@ -5,8 +5,8 @@ const port = 3000;
 app.get('/', (req, res) => res.send('Hello World!'));
 
 app.get('/teapot', (req,res)=>{
+  res.set('X-viet', 'teapots-are-great-header')
   res.status(418)
-  res.set('X-viet`, teapots-are-great-header')
   res.send("I'm a teapot!")
 })
 
